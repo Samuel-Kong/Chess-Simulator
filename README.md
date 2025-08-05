@@ -39,16 +39,16 @@ Submit a chess move for validation and execution.
 Request Body:
 ```json
 {
-    "move": "e2e4",  // UCI chess notation
-    "color": "white"  // or "black"
+    "move": "e2e4",
+    "color": "white"
 }
 ```
 
 Response:
 ```json
 {
-    "valid": boolean,
-    "error": "string"  // Only present if valid is false
+    "valid": true,
+    "error": "string"
 }
 ```
 
@@ -60,7 +60,7 @@ Checks if the game is in checkmate.
 Response:
 ```json
 {
-    "winner": "white" | "black" | null
+    "winner": "white"
 }
 ```
 
